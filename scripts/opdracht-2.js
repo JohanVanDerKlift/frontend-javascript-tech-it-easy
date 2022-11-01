@@ -8,6 +8,9 @@ function itemsSold(inventory) {
   return totalAmount;
 }
 
+//---------------------------------------------
+// Opdracht 2b
+
 function itemsBought(inventory) {
   let totalAmount = 0;
   for (let i = 0; i< inventory.length; i++) {
@@ -18,17 +21,26 @@ function itemsBought(inventory) {
 
 console.log(itemsSold(inventory));
 
+//---------------------------------------------
+// Opdracht 2c
+
 const showItemsSold = document.createElement('span');
 showItemsSold.textContent = `${itemsSold(inventory)}`;
 showItemsSold.setAttribute('class', 'blue-color');
 const sold = document.getElementById('sold');
 sold.appendChild(showItemsSold);
 
+//---------------------------------------------
+// Opdracht 2d
+
 const showItemsBought = document.createElement('span');
 showItemsBought.textContent = `${itemsBought(inventory)}`
 showItemsBought.setAttribute('class', 'green-color');
 const bought = document.getElementById('bought');
 bought.appendChild(showItemsBought);
+
+//---------------------------------------------
+// Opdracht 2e
 
 const showItemsLeft = document.createElement('span');
 showItemsLeft.textContent = `${itemsBought(inventory) - itemsSold(inventory)}`;

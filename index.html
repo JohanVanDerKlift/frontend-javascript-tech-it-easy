@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <title>Tech It Easy Dashboard</title>
     <link rel="stylesheet" href="styles.css"/>
+    <script defer type="text/javascript" src="scripts/main.js"></script>
+    <script defer type="text/javascript" src="scripts/opdracht-1.js"></script>
+    <script defer type="text/javascript" src="scripts/opdracht-2.js"></script>
+    <script defer type="text/javascript" src="scripts/opdracht-3.js"></script>
+    <script defer type="text/javascript" src="scripts/opdracht-4.js"></script>
 </head>
 <body>
-<main>
-    <p id="sold">Het totaal aantal verkochte tv's is: </p>
-    <p id="bought">Het totaal aantal ingekochte tv's is: </p>
-    <p id="left">Het totaal aantal te verkopen tv's is: </p>
-    <ul id="brand-list"></ul>
-</main>
+    <main id="main">
+        <p id="sold">Het totaal aantal verkochte tv's is: </p>
+        <p id="bought">Het totaal aantal ingekochte tv's is: </p>
+        <p id="left">Het totaal aantal te verkopen tv's is: </p>
 
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="./opdracht-1.js"></script>
-<script type="text/javascript" src="./opdracht-2.js"></script>
-<script type="text/javascript" src="./opdracht-3.js"></script>
+        <ul id="brand-list"></ul>
+        <div id="tv-list"></div>
+
+        <button id="sort-by-price">Sorteer op prijs</button>
+        <button id="sort-by-ambilight">Filter Ambilight</button>
+        <button id="filter-sold-out">Filter uitverkocht</button>
+
+    </main>
 </body>
 </html>
